@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-@@include('components/page-blocks/_head.html',{
-"lang":"en",
-"title":"Dental Tooth",
-"description":"",
-"keywords":"",
-"favicon":"img/favicons/favicon",
-})
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> 
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="./src/img/favicons.ico"
+				>
+	<link rel="stylesheet"
+				href="./build/css/style.min.css">
+        <link
+        rel="stylesheet"
+        href="./build/css/swiper.css"
+      />
+        <link rel="stylesheet" href="./build/css/normalize.css">
+	<title>Dental Tooth</title>
+</head>
 
 <body>
   <div class="btn-up btn-up_hide"></div>
@@ -37,7 +51,103 @@
       </div>
     </div>
         </div>
-  @@include('components/page-blocks/_header.html')
+        <header class="header">
+          <div class="header__top">
+           <div class="container">
+             <div class="header__top-row">
+               <div class="header__top-location">
+                 <img class = "header__top-location-img" src="./src/img/svg/css/location.svg" alt="Адрес">
+                 <span>ул. Протопского 28А город Алматы</span>
+               </div>
+               <div class="header__top-right">
+                <a href="tel:77776544454" class="header__top-phone">
+                 <img src="./src/img/svg/css/phone.svg" alt="Телефон" class="header__top-phone-img">
+                 <span>+7 (777) 654 44 54</span>
+                </a>
+                <a href="mailto:info@dentaltooth.kz" class="header__top-mail">
+                 <img src="./src/img/svg/css/envelope.svg" alt="Почта" class="header__top-mail-img">
+                 <span>info@dentaltooth.kz</span>
+                </a>
+                <div class="header__top-social">
+                 <a href="#" class="header__top-social-link">
+                   <img src="./src/img/svg/css/twitter.svg" alt="Twitter">
+                 </a>
+                 <a href="#" class="header__top-social-link">
+                   <img src="./src/img/svg/css/instagram.svg" alt="Instagram">
+                 </a>
+                 <a href="#" class="header__top-social-link">
+                   <img src="./src/img/svg/css/vk.svg" alt="VK">
+                 </a>
+                </div>
+               </div>
+               <div class="header__hamburger">
+                 <img src="./src/img/svg/css/hamburger.svg" alt="Hamburger">
+               </div>
+             </div>
+           </div>
+          </div>
+          <div class="header__bottom">
+           <div class="container">
+             <div class="header__bottom-row">
+           <a href="./index.html" class="header__bottom-logo">
+             <img src="./src/img/svg/css/Logo.svg" alt="Dental Tooth">
+           </a>
+           <div class="header__bottom-nav">
+         <ul>
+           <li><a href="./index.html">Главная</a></li>
+           <li><a href="./index.html#about">Услуги</a></li>
+           <li><a href="./index.html#specialists">Наши специалисты</a></li>
+           <li><a href="./index.html#comments">Отзывы</a></li>
+           <li><a href="./src/blog.html">Блог</a></li>
+           <li><a href="./src/contacts.html">Контакты</a></li>
+         </ul>
+           </div>
+           <a href="#callback-popup" class="header__bottom-btn" data-effect="mfp-zoom-in">Получить консультацию</a>
+          </div>
+          </div>
+          </div>
+          <div class="header__mobile-menu">
+           <div class="header__mobile-menu-header">
+             <div class="header__mobile-menu-title">
+               Меню
+             </div>
+             <div>
+               <img class="header__mobile-menu-close" src="./src/img/svg/css/cross.svg" alt="Закрыть">
+             </div> 
+           </div>
+           <div class="header__mobile-menu-body">
+               <a href="tel:77776544454" class="header__top-phone">
+                <img src="./src/img/svg/css/phone.svg" alt="Телефон" class="header__top-phone-img">
+                <span>+7 (777) 654 44 54</span>
+               </a>
+               <a href="mailto:info@dentaltooth.kz" class="header__top-mail">
+                <img src="./src/img/svg/css/envelope.svg" alt="Телефон" class="header__top-mail-img">
+                <span>info@dentaltooth.kz</span>
+               </a>
+               <div class="header__top-social">
+                <a href="#" class="header__top-social-link">
+                  <img src="./src/img/svg/css/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="header__top-social-link">
+                  <img src="./src/img/svg/css/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="header__top-social-link">
+                  <img src="./src/img/svg/css/vk.svg" alt="VK">
+                </a>
+               </div>
+               <div class="header__mobile-menu-nav">
+                 <ul>
+                   <li><a class = 'header__mobile-menu-nav-link' href="./index.html">Главная</a></li>
+                   <li><a class = 'header__mobile-menu-nav-link' href="./index.html#about">Услуги</a></li>
+                   <li><a class = 'header__mobile-menu-nav-link' href="./index.html#specialists">Наши специалисты</a></li>
+                   <li><a class = 'header__mobile-menu-nav-link' href="./index.html#comments">Отзывы</a></li>
+                   <li><a class = 'header__mobile-menu-nav-link' href="./src/blog.html">Блог</a></li>
+                   <li><a class = 'header__mobile-menu-nav-link' href="./src/contacts.html">Контакты</a></li>
+                 </ul>
+                   </div>
+           </div>
+          </div>
+         </header>
   <main class="main">
     <div class="breadcrumbs">
       <div class="container">
@@ -147,8 +257,114 @@
         </div>
       </div>
     </div>
-    @@include('components/page-blocks/form.html')
+    <section class="form" id="form">
+      <div class="container">
+        <div class="form-row">
+          <div class="form__wrapper">
+            <h3 class="form__title">
+              Записаться на прием
+            </h3>
+            <form class="wpcf7-form init">
+              <p><span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" placeholder="Ваше имя" type="text"></span></p>
+              <p><span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-phonemask" placeholder="Ваш телефон" type="text" name="phone"></span></p>
+              <p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Записаться на прием"><span class="wpcf7-spinner"></span></p>
+            </form>
+            <div class="form__text">
+              Нажимая кнопку, я даю свое согласие на обработку моих персональных данных
+            </div>
+          </div>
+          <div class="form__img">
+            <img src="./src/img/form.png" alt="Записаться на прием">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  @@include('components/page-blocks/_footer.html')
-	@@include('components/page-blocks/_scripts.html')
+  <footer class="footer" style  = 'background-color: #10406F'>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <a class = 'footer__left-logo' href="#"><img src="./src/img/svg/css/footerlogo.svg" alt="Dental Tooth"></a>
+          <div class="footer__left-info">
+            <div class="footer__left-info-item">
+              <span class="footer__left-info-item-icon">
+                <img src="./src/img/svg/css/location.svg" alt="Location">
+                </span>
+              <span>ул. Протопского 28А город Алматы</span>
+              </div>
+              <div class="footer__left-info-item">
+              <span class="footer__left-info-item-icon">
+                <img src="./src/img/svg/css/phone.svg" alt="Phone">
+                </span>
+              <span>+7 (777) 654 44 54</span>
+              </div>
+              <div class="footer__left-info-item">
+              <span class="footer__left-info-item-icon">
+                <img src="./src/img/svg/css/envelope.svg" alt="Email">
+                </span>
+              <span>info@dentaltooth.kz</span>
+              </div>
+              </div>
+              <div class="footer__socials">
+                <a href="#" class="footer__socials-link">
+                  <img src="./src/img/svg/css/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="footer__socials-link">
+                  <img src="./src/img/svg/css/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="footer__socials-link">
+                  <img src="./src/img/svg/css/vk.svg" alt="VK">
+                </a>
+              </div>
+              </div>
+              <div class="footer__right">
+          <div class="footer__right-menu">
+            <div class="footer__right-menu-title">Наши услуги</div>
+          <ul>
+            <li><a href="#">Отбеливание зубов</a></li>
+            <li><a href="#">Лечение десен</a></li>
+            <li><a href="#">Апноэ во сне</a></li>
+            <li><a href="#">Реставрации</a></li>
+            <li><a href="#">Дизайн улыбки</a></li>
+            <li><a href="#">Корневой канал</a></li>
+            <li><a href="#">Имплантационная стоматология</a></li>
+            <li><a href="#">Сознательная седация</a></li>
+            <li><a href="#">Ортодонтия</a></li>
+          </ul>
+          </div>
+          <div class="footer__right-menu">
+            <div class="footer__right-menu-title">Наши стоматологи</div>
+          <ul>
+            <li><a href="./src/dantist.html">John Doe</a></li>
+            <li><a href="./src/dantist.html">Evan Krak</a></li>
+            <li><a href="./src/dantist.html">Sophia Green</a></li>
+            <li><a href="./src/dantist.html">Maria Delfina</a></li>
+          </ul>
+          </div>
+          <div class="footer__right-menu">
+            <div class="footer__right-menu-title">Часы работы</div>
+          <ul>
+            <li><span>Понедельник: 8:30 - 9:00</span></li>
+            <li><span>Вторник: 8:00 - 9:00</span></li>
+            <li><span>Среда: 8:00 - 9:00</span></li>
+            <li><span>Четверг: 8:30 - 9:00</span></li>
+            <li><span>Пятница: 10:00 - 4:00</span></li>
+            <li><span>Суббота: выходной</span></li>
+            <li><span>Воскресенье: Закрыто</span></li>
+          </ul>
+          </div>
+              </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      2022 © Dental Tooth Все права защищены
+    </div>
+  </footer>
+  <script src="./build/js/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./build/js/swiper-init.js"></script>
+  <script src="./build/js/magnific.js"></script>
+  <script src="./build/js/btnup.js"></script>
+  <script src="./build/js/popup.js"></script>
+  <script src="./build/js/burger.js"></script>
 </body>
