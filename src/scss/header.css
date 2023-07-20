@@ -1,0 +1,213 @@
+body {
+  overflow-x: hidden;
+}
+
+.header__top {
+  background-color: #2378C9;
+  padding: 14px 0;
+}
+.header__top-row {
+  display: flex;
+  align-items: center;
+  font-family: "Source Sans Pro";
+  color: white;
+}
+.header__top-row a {
+  color: white;
+  white-space: nowrap;
+}
+.header__top-location {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.header__top-location span {
+  line-height: 18px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.header__top-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+@media screen and (max-width: 992px) {
+  .header__top-right {
+    display: none;
+  }
+}
+.header__hamburger {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .header__hamburger {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+.header__hamburger img {
+  width: 30px;
+}
+.header__mobile-menu {
+  position: absolute;
+  transition: 0.5s ease;
+  transform: translateX(110%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #0E6EAA;
+  box-shadow: -2px 4px 4px 3px rgba(49, 46, 46, 0.09);
+}
+.header .header__mobile-menu.active {
+  transform: none;
+}
+.header__mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 22px;
+  font-family: "Source Sans Pro";
+  line-height: 28px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.header__mobile-menu-header::after {
+  content: "";
+  height: 1px;
+  width: calc(100% + 40px);
+  background-color: rgba(217, 214, 214, 0.5607843137);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+.header__mobile-menu-body {
+  text-align: center;
+}
+.header__mobile-menu-body .header__top-social {
+  justify-content: center;
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+.header__mobile-menu-body a {
+  color: #FFFFFF;
+}
+.header__mobile-menu-body .header__top-mail, .header__mobile-menu-body .header__top-phone {
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  line-height: 23px;
+  justify-content: center;
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+.header__mobile-menu-body li a {
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  line-height: 23px;
+}
+.header__mobile-menu-body .header__mobile-menu-nav {
+  margin-top: 50px;
+}
+.header__mobile-menu-body .header__mobile-menu-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.header__top-phone {
+  margin-right: 40px;
+}
+.header__top-mail {
+  margin-right: 55px;
+}
+.header__top-phone, .header__top-mail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header__top-social {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+.header__top-social-link img {
+  max-width: 22px;
+}
+.header__bottom {
+  font-family: "Source Sans Pro";
+  padding: 20px 0;
+}
+.header__bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 575px) {
+  .header__bottom-logo {
+    margin-right: 20px;
+  }
+}
+.header__bottom-logo img {
+  max-width: 172px;
+}
+@media screen and (max-width: 575px) {
+  .header__bottom-logo img {
+    max-width: 120px;
+  }
+}
+.header__bottom-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+@media screen and (max-width: 1200px) {
+  .header__bottom-nav ul {
+    gap: 25px;
+  }
+}
+.header__bottom-nav a {
+  font-size: 18px;
+  line-height: 23px;
+  color: #302D2D;
+  white-space: nowrap;
+}
+.header__bottom-nav a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 992px) {
+  .header__bottom-nav {
+    display: none;
+  }
+}
+.header__bottom-btn {
+  background-color: #F86D6D;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  padding: 17px 29px;
+  border-radius: 25px;
+  max-width: 208px;
+  transition: 0.5s ease;
+}
+.header__bottom-btn:hover {
+  background-color: #c04f4f;
+}
+@media screen and (max-width: 575px) {
+  .header__bottom-btn {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=header.css.map */

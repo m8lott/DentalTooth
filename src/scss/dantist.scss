@@ -1,0 +1,135 @@
+.dantist {
+  padding: 60px 0;
+  font-family: 'Source Sans Pro';
+  // .dantist__wrapper
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:992px){
+      flex-direction: column;
+      margin-bottom: -10px;
+      }
+  }
+  // .dantist__left
+  &__left {
+    display: block;
+    margin-right: 64px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 11px 3px #2E2C2C36;
+    overflow: hidden;
+    min-width: 400px;
+    @media screen and (max-width:992px){
+      margin-right: 0px;
+      width: 100%;
+      height: 400px;
+      margin-bottom: 25px;
+      }
+    img {
+      max-width: 432px;
+      min-width: 432px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      @media screen and (max-width:992px){
+     max-width: none;
+        }
+    }
+  }
+  // .dantist__right
+  &__right {
+  }
+  // .dantist__right-title
+  &__right-title {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 65px;
+    margin-bottom: 32px;
+    @media screen and (max-width:992px){
+      font-size: 42px;
+      }
+  }
+  // .dantist__right-list
+  &__right-list {
+    margin-bottom: 32px;
+    @media screen and (max-width:992px){
+     margin-bottom: 10px;
+      }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      li {
+    font-size: 18px;
+    line-height: 32px;
+    color: #56565E;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 100%;
+      background-color: #5EB8F0;
+      margin-right: 10px;
+    }
+    @media screen and (max-width:992px){
+    font-size: 16px;
+      }
+      }
+    }
+  }
+  // .dantist__right-list-title
+  &__right-list-title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #56565E;
+    margin-bottom: 10px;
+    @media screen and (max-width:992px){
+   font-size: 18px;
+      }
+  }
+  }
+  .container {
+  }
+  .schedule {
+  }
+  .schedule-item {
+    font-size: 18px;
+    line-height: 32px;
+    color: #56565E;
+    margin-bottom: -1px;
+    @media screen and (max-width:992px){
+     font-size: 16px;
+      }
+  
+  }
+  .dantist.contacts__wrapper {
+justify-content: center;
+margin-bottom: 70px;
+    .contacts__item {
+      width: 33.3%;
+      max-width: 386px;
+      @media screen and (max-width:992px){
+        width: calc(50% - 10px);
+        }
+        
+        &:last-child {
+          @media screen and (max-width:992px){
+            width: 100%;
+            max-width: 795px;
+            }
+        }
+       .contacts__item-title {
+        @media screen and (max-width:575px){
+          font-size: 18px;
+           }
+       }
+       .contacts__item-content {
+        @media screen and (max-width:575px){
+          font-size: 14px;
+           }
+       }
+    }
+  }
+  

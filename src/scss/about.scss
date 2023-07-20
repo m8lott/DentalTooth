@@ -1,0 +1,123 @@
+.about {
+  // .about__wrapper
+  &__wrapper {
+    font-family: "Source Sans Pro";
+    padding: 110px 0;
+    display: flex;
+    align-items: center;
+    gap:60px;
+    @media screen and (max-width:1200px){
+ gap: 30px;
+      }
+      @media screen and (max-width:992px){
+        flex-direction: column;
+        padding: 48px 0;
+        align-items: flex-start;
+          }
+  }
+  // .about__left
+  &__left {
+    @media screen and (max-width:992px){
+      width: 100%;
+      margin-bottom: 48px;
+      }
+    img {
+      max-width: 488px;
+      @media screen and (max-width:992px){
+        max-width: none;
+        width: 100%;
+        }
+    }
+  }
+  // .about__right
+  &__right {
+    max-width: 680px;
+  }
+  // .about__right-title
+  &__right-title {
+font-size: 46px;
+font-weight: 700;
+line-height: 55px;
+color: #302D2D;
+@media screen and (max-width:992px){
+font-size: 40px;
+line-height: 48px;
+  }
+  @media screen and (max-width:575px){
+    font-size: 30px;
+    line-height: 38px;
+    }
+  }
+  // .about__right-title-bold
+  &__right-title-bold {
+    font-size: 52px;
+font-weight: 700;
+line-height: 65px;
+color: #2378C9;
+@media screen and (max-width:992px){
+  font-size: 40px;
+    }
+    @media screen and (max-width:575px){
+      font-size: 30px;
+      line-height: 38px;
+      }
+  }
+  // .about__right-desc
+  &__right-desc {
+font-size: 18px;
+line-height: 28px;
+color: #6B6868;
+padding-top: 33px;
+@media screen and (max-width:992px){
+font-size: 16px;
+  }
+  @media screen and (max-width:575px){
+    font-size: 14px;
+    }
+  }
+  // .about__right-list
+  &__right-list {
+    padding-top: 22px;
+    color: #302D2D;
+    ul {
+      column-count: 2;
+      li {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        padding-top: 18px;
+        @media screen and (max-width:992px){
+          font-size: 16px;
+            }
+            @media screen and (max-width:575px){
+              font-size: 14px;
+              }
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border-radius: 100%;
+          background-color: #2378C9;
+          margin-right: 22px;
+          @media screen and (max-width:575px){
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+            }
+        }
+      }
+    }
+  }
+  // .about__right-list-title
+  &__right-list-title {
+font-size: 18px;
+line-height: 32px;
+@media screen and (max-width:575px){
+  font-size: 16px;
+  }
+  }
+  }
+  .container {
+  }
+  

@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
 "lang":"en",
-"title":"Easy-webdev-startpack v3.0",
-"description":"Gulp pack for easy html/php markup development",
+"title":"Dental Tooth",
+"description":"",
 "keywords":"",
 "favicon":"img/favicons/favicon",
 })
 
 <body>
+  <div class="btn-up btn-up_hide"></div>
+  <div class="callback-popup mfp-hide mfp-with-anim" id="callback-popup">
+<div class="callback-header">
+<div class="callback-logo">
+  <img src="./img/svg/css/Logo.svg" alt="Dental Tooth">
+</div> 
+<button title="Close" type="button" class="mfp-close-custom">
+  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0.977032 19.0005C0.72675 19.0005 0.476467 18.9053 0.28631 18.7137C-0.0954366 18.3319 -0.0954366 17.713 0.28631 17.3313L17.3313 0.28631C17.713 -0.0954366 18.3319 -0.0954366 18.7137 0.28631C19.0954 0.668056 19.0954 1.28696 18.7137 1.66895L1.66895 18.7137C1.47736 18.9041 1.22708 19.0005 0.977032 19.0005Z" fill="#F0DFDF"/>
+  <path d="M18.0232 19.0005C17.7729 19.0005 17.5229 18.9053 17.3325 18.7137L0.28631 1.66895C-0.0954366 1.28696 -0.0954366 0.668056 0.28631 0.28631C0.668056 -0.0954366 1.28696 -0.0954366 1.66895 0.28631L18.7137 17.3313C19.0954 17.713 19.0954 18.3319 18.7137 18.7137C18.5221 18.9041 18.2721 19.0005 18.0232 19.0005Z" fill="#F0DFDF"/>
+  </svg>
+  </button>
+</div>
+<div class="callback-body">
+  <div class="form__wrapper">
+    <h3 class="form__title">
+      Получить консультацию
+    </h3>
+    <form class="wpcf7-form init">
+      <p><span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" placeholder="Ваше имя" type="text"></span></p>
+      <p><span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-phonemask" placeholder="Ваш телефон" type="text" name="phone"></span></p>
+      <p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Отправить"><span class="wpcf7-spinner"></span></p>
+    </form>
+    <div class="form__text">
+      Нажимая кнопку, я даю свое согласие на обработку моих персональных данных
+    </div>
+  </div>
+</div>
+    </div>
 	@@include('components/page-blocks/_header.html')
-	<main class="main"></main>
+	<main class="main">
+    @@include('components/page-blocks/baner.html')
+    @@include('components/page-blocks/about.html')
+    @@include('components/page-blocks/features.html')
+    @@include('components/page-blocks/specialists.html')
+    @@include('components/page-blocks/price.html')
+    @@include('components/page-blocks/news.html')
+    @@include('components/page-blocks/comments.html')
+    @@include('components/page-blocks/form.html')
+  </main>
 	@@include('components/page-blocks/_footer.html')
 	@@include('components/page-blocks/_scripts.html')
 </body>
